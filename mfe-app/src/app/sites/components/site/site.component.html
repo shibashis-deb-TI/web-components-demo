@@ -1,0 +1,27 @@
+<table>
+  <tr>
+    <th *ngFor="let heading of headers">{{ heading }}</th>
+  </tr>
+
+  <tr *ngFor="let data of tableData">
+    <td>
+      <input
+        type="checkbox"
+        [checked]="data.checked"
+        (change)="handleCheckedRow(data.id)"
+      />
+    </td>
+    <td>{{ data.siteId }}</td>
+    <td>{{ data.pod }}</td>
+    <td>{{ data.lastRead }}</td>
+    <td>{{ data.dc }}</td>
+    <td>{{ data.address }}</td>
+    <td>{{ data.city }}</td>
+    <td>{{ data.state }}</td>
+    <td>{{ data.meterType }}</td>
+    <td>{{ data.zip }}</td>
+    <td>{{ data.cycle }}</td>
+    <td>{{ data.loadProfile }}</td>
+    <td>{{ data.customer }}</td>
+  </tr>
+</table>

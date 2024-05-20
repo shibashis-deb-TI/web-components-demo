@@ -1,0 +1,7 @@
+<section>
+  <button type="button" (click)="toggleTableView()">Sites</button>
+
+  <div *ngIf="show">
+    <app-site [tableData]="tableData" (toggleSelect)="toggleCheckedRow($event)"/>
+  </div>
+</section>

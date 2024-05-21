@@ -1,0 +1,14 @@
+main {
+  width: 80%;
+  background-color: whitesmoke;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 2px solid rgb(161, 161, 227);
+}
+
+.button-active {
+  border: 2px solid rgb(248, 96, 96);
+}

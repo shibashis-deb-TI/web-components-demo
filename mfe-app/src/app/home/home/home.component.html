@@ -1,0 +1,12 @@
+<main>
+  <button
+    type="button"
+    (click)="toggleView()"
+    [ngClass]="{ 'button-active': show }"
+  >
+    Home
+  </button>
+  <div *ngIf="show">
+    <p>This is the home component!</p>
+  </div>
+</main>

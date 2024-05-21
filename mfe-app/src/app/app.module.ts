@@ -17,10 +17,8 @@ export class AppModule {
     const sitesEl = createCustomElement(SiteListComponent, {
       injector: this.injector,
     });
-    // const productsEl = createCustomElement(ProductsComponent, {
-    //   injector: this.injector,
-    // });
+
     customElements.define('sites-app', sitesEl);
-    // customElements.define('products-app', productsEl);
   }
 }
+

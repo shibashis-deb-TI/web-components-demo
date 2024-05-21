@@ -58,6 +58,10 @@ li a {
   font-size: 18px;
   font-weight: bold;
   margin-right: 25px;
+  padding: 10px;
+}
+li a:hover {
+  background-color: rgb(233, 232, 232);
 }
 button {
   background-color: black;

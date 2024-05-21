@@ -1,27 +1,38 @@
-<table>
-  <tr>
-    <th *ngFor="let heading of headers">{{ heading }}</th>
-  </tr>
-
-  <tr *ngFor="let data of tableData">
-    <td>
-      <input
-        type="checkbox"
-        [checked]="data.checked"
-        (change)="handleCheckedRow(data.id)"
-      />
-    </td>
-    <td>{{ data.siteId }}</td>
-    <td>{{ data.pod }}</td>
-    <td>{{ data.lastRead }}</td>
-    <td>{{ data.dc }}</td>
-    <td>{{ data.address }}</td>
-    <td>{{ data.city }}</td>
-    <td>{{ data.state }}</td>
-    <td>{{ data.meterType }}</td>
-    <td>{{ data.zip }}</td>
-    <td>{{ data.cycle }}</td>
-    <td>{{ data.loadProfile }}</td>
-    <td>{{ data.customer }}</td>
-  </tr>
+<table class="content-table">
+  <thead>
+    <tr>
+      <th>Site ID</th>
+      <th>POD</th>
+      <th>DC</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>CustomerName</th>
+      <th>Meter Type</th>
+      <th>Cycle</th>
+      <th>Load Profile</th>
+      <th>Profile</th>
+      <th>Rate Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of tableData">
+      <td class="fd">
+        <a href="#">{{ data.siteId }}</a>
+      </td>
+      <td>{{ data.pod }}</td>
+      <td>{{ data.dc }}</td>
+      <td>{{ data.address }}</td>
+      <td>{{ data.city }}</td>
+      <td>{{ data.state }}</td>
+      <td>{{ data.zip }}</td>
+      <td>{{ data.customer }}</td>
+      <td>{{ data.meterType }}</td>
+      <td>{{ data.cycle }}</td>
+      <td>{{ data.loadProfile }}</td>
+      <td>{{ data.profile }}</td>
+      <td>{{ data.rateCode }}</td>
+    </tr>
+  </tbody>
 </table>

@@ -1,16 +1,14 @@
+import { createCustomElement } from '@angular/elements';
 import { Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { createCustomElement } from '@angular/elements';
-import { SiteListComponent } from './sites/containers/site-list/site-list.component';
-import { SitesModule } from './sites/sites.module';
+import { SitesModule, SiteListComponent } from '@/module/sites';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, SitesModule],
+  imports: [BrowserModule, SitesModule],
   providers: [],
   bootstrap: [AppComponent],
 })

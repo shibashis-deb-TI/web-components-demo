@@ -1,10 +1,30 @@
-<main>
-  <header>
-    <p>Welcome</p>
-    <a routerLink="opportunities">Opportunities</a>
-  </header>
+<div class="container">
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="la">
+        <div class="ic">
+          <div class="logo">
+            <img src="../../../../assets/images/nrg-logo.png" alt="logo" />
+          </div>
+          <div class="app">Digital Sales Platform</div>
+        </div>
 
-  <div>
+        <ul>
+          <li class="navLink">
+            <a routerLink="opportunities" routerLinkActive="active"
+              >OPPORTUNITIES</a
+            >
+          </li>
+          <li class="links"><a href="#">RESEARCH</a></li>
+          <li class="links"><a href="#">MAINTENANACE</a></li>
+          <li class="links"><a href="#">CLOSING QUEUE</a></li>
+        </ul>
+      </div>
+      <button><a href="#">SignIn</a></button>
+    </div>
+  </nav>
+
+  <div class="auto-scroll">
     <router-outlet></router-outlet>
   </div>
-</main>
+</div>

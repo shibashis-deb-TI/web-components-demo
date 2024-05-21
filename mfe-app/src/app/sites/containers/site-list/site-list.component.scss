@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem 0;
+  padding: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 2px solid rgb(161, 161, 227);
+}
+
+.button-active {
+  border: 2px solid rgb(248, 96, 96);
+}

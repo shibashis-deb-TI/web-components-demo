@@ -1,5 +1,5 @@
 <section>
-  <button type="button" (click)="toggleTableView()">Sites</button>
+  <button type="button" (click)="toggleTableView()" [ngClass]="{'button-active': show}">Sites</button>
 
   <div *ngIf="show">
     <app-site [tableData]="tableData" />

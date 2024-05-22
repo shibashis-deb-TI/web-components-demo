@@ -27,6 +27,7 @@
       "@/products/*": ["src/app/products/*"]
     }
   },
+  "exclude": ["src/assets/*"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "dev:watch": "npm run start && npm run expose",
+    "build:watch": "ng build --output-hashing none --watch",
     "start": "ng serve --port 4300",
-    "expose": "ng build --output-hashing none && npm run copy:main && npm run copy:polyfills && npm run copy:runtime && npm run copy:styles",
+    "copy:dist": "cp -ru ./src/assets/* ./dist/mfe-app",
     "copy:main": "cp ./dist/mfe-app/main.js ./src/assets/main.js",
     "copy:polyfills": "cp ./dist/mfe-app/polyfills.js ./src/assets/polyfills.js",
     "copy:runtime": "cp ./dist/mfe-app/runtime.js ./src/assets/runtime.js",

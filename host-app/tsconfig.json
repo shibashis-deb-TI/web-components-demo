@@ -14,8 +14,14 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"]
   },
+  "paths": {
+    "@/module/*": ["src/app/*"],
+    "@/home/*": ["src/app/home/*"],
+    "@/header/*": ["src/app/header/*"],
+    "@/opportunities/*": ["src/app/opportunities/*"]
+  },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
+    "strictInjectionParameters": true
   }
 }

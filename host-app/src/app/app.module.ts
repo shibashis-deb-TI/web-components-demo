@@ -1,24 +1,26 @@
+import { MaintenanceComponent } from "./maintenance/components/maintenance/maintenance.component";
 import { HeaderModule } from "./header/header.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
 import { RouterModule, Routes } from "@angular/router";
-import { MenuComponent } from "./header/components";
+import { HomeComponent } from "./home";
 
 const routes: Routes = [
+  { path: "home", component: HomeComponent },
   {
-    path: "",
-    component: MenuComponent,
-    children: [
-      {
-        path: "opportunities",
-        loadChildren: () =>
-          import("./opportunities/opportunities.module").then(
-            (m) => m.OpportunitiesModule
-          ),
-      },
-    ],
+    path: "opportunities",
+    loadChildren: () =>
+      import("./opportunities").then((m) => m.OpportunitiesModule),
+  },
+  {
+    path: "products",
+    loadChildren: () => import("./products").then((m) => m.ProductsModule),
+  },
+  {
+    path: "maintenance",
+    component: MaintenanceComponent,
   },
 ];
 @NgModule({

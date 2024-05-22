@@ -1,6 +1,6 @@
 <section>
   <button type="button" [ngClass]="{ active: show }" (click)="toggleView()">
-    Site List
+    Product List
   </button>
-  <sites-app [tableData]="tableData" *ngIf="show"></sites-app>
+  <products-app [tableData]="tableData" *ngIf="show"></products-app>
 </section>

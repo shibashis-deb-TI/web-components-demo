@@ -1,5 +1,4 @@
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 1rem 0;
@@ -83,6 +82,4 @@ button a {
   text-decoration-line: underline rgb(78, 78, 250);
 }
 
-.auto-scroll {
-  overflow-y: auto;
-}
+

@@ -1,15 +1,129 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core";
+import { Site } from "../../model";
 
 @Component({
-  selector: 'app-opportunity',
-  templateUrl: './opportunity.component.html',
-  styleUrls: ['./opportunity.component.scss']
+  selector: "app-opportunity",
+  templateUrl: "./opportunity.component.html",
+  styleUrls: ["./opportunity.component.scss"],
 })
-export class OpportunityComponent implements OnInit {
+export class OpportunityComponent {
+  show = true;
+  tableData: ReadonlyArray<Site> = [
+    {
+      id: 1,
+      siteId: "341753665656",
+      pod: "1066878696996468468",
+      dc: "CPL",
+      address: "921 HOUSTON ST",
+      city: "PORTLAND",
+      state: "TX",
+      zip: "664984",
+      customer: "Century 21",
+      meterType: "Scalar",
+      cycle: 9,
+      loadProfile: "BUSLOLF",
+      profile: "G2",
+      rateCode: 857,
+    },
+    {
+      id: 2,
+      siteId: "341753665656",
+      pod: "1066878696996468468",
+      dc: "CPL",
+      address: "921 HOUSTON ST",
+      city: "PORTLAND",
+      state: "TX",
+      zip: "664984",
+      customer: "Century 21",
+      meterType: "Scalar",
+      cycle: 9,
+      loadProfile: "BUSLOLF",
+      profile: "G2",
+      rateCode: 857,
+    },
+    {
+      id: 3,
+      siteId: "341753665656",
+      pod: "1066878696996468468",
+      dc: "CPL",
+      address: "921 HOUSTON ST",
+      city: "PORTLAND",
+      state: "TX",
+      zip: "664984",
+      customer: "Century 21",
+      meterType: "Scalar",
+      cycle: 9,
+      loadProfile: "BUSLOLF",
+      profile: "G2",
+      rateCode: 857,
+    },
+    {
+      id: 4,
+      siteId: "341753665656",
+      pod: "1066878696996468468",
+      dc: "CPL",
+      address: "921 HOUSTON ST",
+      city: "PORTLAND",
+      state: "TX",
+      zip: "664984",
+      customer: "Century 21",
+      meterType: "Scalar",
+      cycle: 9,
+      loadProfile: "BUSLOLF",
+      profile: "G2",
+      rateCode: 857,
+    },
+    {
+      id: 5,
+      siteId: "341753665656",
+      pod: "1066878696996468468",
+      dc: "CPL",
+      address: "921 HOUSTON ST",
+      city: "PORTLAND",
+      state: "TX",
+      zip: "664984",
+      customer: "Century 21",
+      meterType: "Scalar",
+      cycle: 9,
+      loadProfile: "BUSLOLF",
+      profile: "G2",
+      rateCode: 857,
+    },
+    {
+      id: 6,
+      siteId: "341753665656",
+      pod: "1066878696996468468",
+      dc: "CPL",
+      address: "921 HOUSTON ST",
+      city: "PORTLAND",
+      state: "TX",
+      zip: "664984",
+      customer: "Century 21",
+      meterType: "Scalar",
+      cycle: 9,
+      loadProfile: "BUSLOLF",
+      profile: "G2",
+      rateCode: 857,
+    },
+    {
+      id: 7,
+      siteId: "341753665656",
+      pod: "1066878696996468468",
+      dc: "CPL",
+      address: "921 HOUSTON ST",
+      city: "PORTLAND",
+      state: "TX",
+      zip: "664984",
+      customer: "Century 21",
+      meterType: "Scalar",
+      cycle: 9,
+      loadProfile: "BUSLOLF",
+      profile: "G2",
+      rateCode: 857,
+    },
+  ];
 
-  constructor() { }
-
-  ngOnInit() {
+  toggleView() {
+    this.show = !this.show;
   }
-
 }

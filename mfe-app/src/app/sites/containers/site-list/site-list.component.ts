@@ -7,7 +7,6 @@ import { Site } from '@/sites/model';
   styleUrls: ['./site-list.component.scss'],
 })
 export class SiteListComponent {
-  @Input() show: boolean = false;
   tableData: ReadonlyArray<Site> = [
     {
       id: 1,
@@ -122,8 +121,4 @@ export class SiteListComponent {
       rateCode: 857,
     },
   ];
-
-  toggleTableView() {
-    this.show = !this.show;
-  }
 }

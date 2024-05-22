@@ -2,6 +2,7 @@ import { MaintenanceComponent } from "./maintenance/components/maintenance/maint
 import { HeaderModule } from "./header/header.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
 import { RouterModule, Routes } from "@angular/router";

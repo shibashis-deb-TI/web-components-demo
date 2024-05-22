@@ -6,12 +6,15 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./assets/web-components/styles.css" />
+    <!-- <link rel="stylesheet" id="style" href="styles.scss" /> -->
   </head>
   <body>
     <app-root></app-root>
-    <script type="module" src="./assets/web-components/main.js"></script>
-    <script type="module" src="./assets/web-components/polyfills.js"></script>
-    <script type="module" src="./assets/web-components/runtime.js"></script>
+    <script id="main" src="http://localhost:4300/assets/main.js"></script>
+    <script
+      id="polyfill"
+      src="http://localhost:4300/assets/polyfills.js"
+    ></script>
+    <script id="runtime" src="http://localhost:4300/assets/runtime.js"></script>
   </body>
 </html>

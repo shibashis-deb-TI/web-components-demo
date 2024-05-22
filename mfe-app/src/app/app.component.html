@@ -1,20 +1,70 @@
-<main class="main-container">
-  <nav class="navbar">
-    <div class="navdiv">
-      <div class="logo">
-        <img src="../../../../assets/images/nrg-logo.png" alt="logo" />
-      </div>
-      <p class="app">VHOS</p>
-      <span>Angular 16</span>
+
+<main>
+  <header>
+    <div class="header-container">
+      <img src="/assets/nrg-logo.svg" alt="Nrg Logo" class="logo" />
+      <p class="dsp-text">VHOS</p>
+      <nav class="navigation">
+        <a
+          [routerLink]="['/']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Home</a
+        >
+        <a
+          [routerLink]="['/sites']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Site</a
+        >
+        <a
+          [routerLink]="['/products']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Product</a
+        >
+        <a
+          [routerLink]="['/opportunities']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Opportunities</a
+        >
+        <a
+          [routerLink]="['/deal-options']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Deal Option</a
+        >
+        <a
+          [routerLink]="['/status']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Status</a
+        >
+        <a
+          [routerLink]="['/quotes']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Quotes</a
+        >
+        <a
+          [routerLink]="['/product-wizard']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          >Product Wizard</a
+        >
+      </nav>
+      <div class="user-info">JOHN ▼</div>
     </div>
-  </nav>
-
-  <section class="tabs">
-    <a routerLink="home" routerLinkActive="active">Home</a>
-    <a routerLink="sites" routerLinkActive="active">Sites</a>
-    <a routerLink="products" routerLinkActive="active">Products</a>
-  </section>
-
+  </header>
   <section class="auto-scroll">
     <router-outlet></router-outlet>
   </section>

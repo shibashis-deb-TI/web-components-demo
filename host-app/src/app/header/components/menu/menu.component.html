@@ -1,26 +1,37 @@
-<div class="container">
-  <nav class="navbar">
-    <div class="navdiv">
-      <div class="la">
-        <div class="ic">
-          <div class="logo">
-            <img src="../../../../assets/images/nrg-logo.png" alt="logo" />
-          </div>
-          <div class="app">Digital Sales Platform</div>
-          <span>Angular 8</span>
-        </div>
 
-        <ul>
-          <li><a routerLink="home">HOME</a></li>
-          <li>
-            <a routerLink="opportunities" routerLinkActive="active"
-              >OPPORTUNITIES</a
-            >
-          </li>
-          <li><a routerLink="products">PRODUCTS</a></li>
-          <li><a routerLink="maintenance">MAINTENANCE</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+<header>
+  <div class="header-container">
+    <img src="/assets/nrg-logo.svg" alt="Nrg Logo" class="logo" />
+    <p class="dsp-text">Digital Services Platform</p>
+    <nav class="navigation">
+      <a [routerLink]="['/sites']" routerLinkActive="active" class="nav-link"
+        >Sites</a
+      >
+      <a
+        [routerLink]="['/opportunities']"
+        routerLinkActive="active"
+        class="nav-link"
+        >OPPORTUNITIES</a
+      >
+      <a [routerLink]="['/products']" routerLinkActive="active" class="nav-link"
+        >Products</a
+      >
+      <a [routerLink]="['/admin']" routerLinkActive="active" class="nav-link"
+        >ADMIN</a
+      >
+      <a
+        [routerLink]="['/maintenance']"
+        routerLinkActive="active"
+        class="nav-link"
+        >MAINTENANCE</a
+      >
+      <a
+        [routerLink]="['/closing-queue']"
+        routerLinkActive="active"
+        class="nav-link"
+        >CLOSING QUEUE</a
+      >
+    </nav>
+    <div class="user-info">JOHN ▼</div>
+  </div>
+</header>

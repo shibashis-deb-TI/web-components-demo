@@ -5,7 +5,7 @@
     "ng": "ng",
     "dev:watch": "npm run start && npm run expose",
     "start": "ng serve --port 4300",
-    "expose": "ng build --output-hashing none && npm run copy:main && npm run copy:polyfills && npm run copy:runtime && npm run copy:styles",
+    "expose": "ng build --output-hashing none && npm run copy:main && npm run copy:polyfills && npm run copy:runtime && npm run copy:styles && npm run start",
     "copy:main": "cp ./dist/mfe-app/main.js ./src/assets/main.js",
     "copy:polyfills": "cp ./dist/mfe-app/polyfills.js ./src/assets/polyfills.js",
     "copy:runtime": "cp ./dist/mfe-app/runtime.js ./src/assets/runtime.js",

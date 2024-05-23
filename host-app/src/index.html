@@ -11,15 +11,25 @@
       type="image/x-icon"
       href="https://www.nrg.com/assets/static/favicon_32.png"
     />
-    <!-- <link rel="stylesheet" id="style" href="styles.scss" /> -->
+
+    <!-- ******************* Load styles from host assets ******************* -->
+    <!-- <link
+      rel="stylesheet"
+      id="style"
+      href="./assets/web-components/styles.css"
+    /> -->
   </head>
   <body>
     <app-root></app-root>
-    <script id="main" src="http://localhost:4300/assets/main.js"></script>
-    <script
-      id="polyfill"
-      src="http://localhost:4300/assets/polyfills.js"
-    ></script>
-    <script id="runtime" src="http://localhost:4300/assets/runtime.js"></script>
+    <!-- ***************** Load form host assets *************************** -->
+    <!-- <script id="main" src="./assets/web-components/main.js"></script>
+    <script id="polyfill" src="./assets/web-components/polyfills.js"></script>
+    <script id="runtime" src="./assets/web-components/runtime.js"></script> -->
+    <!-- ******************************************************************* -->
+
+    <!--******************** Load from mfe/remote app url *******************-->
+    <script src="http://localhost:4300/assets/main.js"></script>
+    <script src="http://localhost:4300/assets/polyfills.js"></script>
+    <script src="http://localhost:4300/assets/runtime.js"></script>
   </body>
 </html>

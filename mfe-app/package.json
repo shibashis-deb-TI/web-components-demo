@@ -3,13 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "dev:watch": "npm run start && npm run expose",
     "start": "ng serve --port 4300",
     "expose": "ng build --output-hashing none && npm run copy:main && npm run copy:polyfills && npm run copy:runtime && npm run copy:styles && npm run start",
     "copy:main": "cp ./dist/mfe-app/main.js ./src/assets/main.js",
     "copy:polyfills": "cp ./dist/mfe-app/polyfills.js ./src/assets/polyfills.js",
     "copy:runtime": "cp ./dist/mfe-app/runtime.js ./src/assets/runtime.js",
     "copy:styles": "cp ./dist/mfe-app/styles.css ./src/assets/styles.css",
+    "copy:main:host": "cp ./dist/mfe-app/main.js ../host-app/src/assets/web-components/main.js",
+    "copy:polyfills:host": "cp ./dist/mfe-app/polyfills.js ../host-app/src/assets/web-components/polyfills.js",
+    "copy:runtime:host": "cp ./dist/mfe-app/runtime.js ../host-app/src/assets/web-components/runtime.js",
+    "copy:styles:host": "cp ./dist/mfe-app/styles.css ../host-app/src/assets/web-components/styles.css",
+    "expose:host": "ng build --output-hashing none && npm run copy:main:host && npm run copy:polyfills:host && npm run copy:runtime:host && npm run copy:styles:host && npm run start",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

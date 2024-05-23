@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "expose": "ng build --output-hashing none",
+    "start": "ng serve --port 4300",
+    "expose": "ng build --output-hashing none && npm run copy:main && npm run copy:polyfill && npm run copy:runtime && npm run copy:styles",
+    "copy:main": "cp ./dist/mfe-app/main.js ../host-app/src/assets/web-components/main.js",
+    "copy:polyfill": "cp ./dist/mfe-app/polyfills.js ../host-app/src/assets/web-components/polyfills.js",
+    "copy:runtime": "cp ./dist/mfe-app/runtime.js ../host-app/src/assets/web-components/runtime.js",
+    "copy:styles": "cp ./dist/mfe-app/styles.css ../host-app/src/assets/web-components/styles.css",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

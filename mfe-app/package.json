@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build:watch": "ng build --output-hashing none --watch",
+    "build:watch": "ng build --output-hashing none --watch",
     "start": "ng serve --port 4300",
     "copy:dist": "cp -ru ./src/assets/* ./dist/mfe-app",
     "copy:main": "cp ./dist/mfe-app/main.js ./src/assets/main.js",
